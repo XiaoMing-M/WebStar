@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!--html5规范用来告诉浏览器html的版本-->
+<html>
+<!--表示整个页面的开始-->
+<!-- 文件名后缀可以是.html或者是.htm -->
+<!--开始标签<>和结束标签</> ,所有开始标签可以定义属性为k和v，v需要加单引或双引-->
+<!--注：标签就是元素，一个意思-->
+
+<head>
+    <!--头标签用于指定html文档的一些属性,引入外部的资源-->
+    <meta charset="utf-8"/>
+    <!--html5用于设定文档编码字符防止乱码-->
+    <title>1.html呀</title>
+    <!--标题标签-->
+    <link rel="stylesheet" type="text/css" href='styles.css'/>
+    <!--css设置第三种引入外部css文件，导入css样式为这些标签更好看，也不会臃肿-->
+    <style type="text/css">
+    img{
+        border: 1px solid red;
+    }
+    </style>
+    <!--css设置第二种，在head标签中使用style标签，也会使代码臃肿-->
+</head>
+
+<body>
+    <!--体标签表示页面的主体内容-->
+    <font color='red' face='宋体' size='7'>Hello Html</font>
+    <!--字体标签，颜色，字体，大小-->
+    <h1 align='center'>Niupi</h1>
+    <!--标题标签,注意一个页面只有一个h1，left默认左对齐,center居中，right右对齐-->
+    <br />
+    <!--换行标签-->
+    我是&lt;br/&gt;标签
+    <!--使用特殊字符在页面展示<br/>，常用&lt小于&gt大于&nbsp空格-->
+    <hr />
+    <!--水平线标签-->
+    <a href="http://baidu.com" target="_self">百度</a>
+    <!--超链接标签,target的_blank 打开新页面跳转，默认是_self当前页面-->
+    <ul type='none'>
+        <li>赵四</li>
+        <li>王五</li>
+    </ul>
+    <!--无序列表，li是列表项-->
+    <img src="1.jpg" width="100px" height="80px" border='2px' alt='找不到' />
+    <!--src可以是绝对路径和相对路径，宽度，高度，边框厚度，无图片显示信息-->
+    <!--相对路径就是以当前文件为基准的位置，绝对就是全路径-->
+    <table align="center" border="1" width='300' cellspacing='1'>
+        <!--表格标签，居中，边框厚度,宽度，表格间距-->
+        <tr>
+            <!--行标签-->
+            <th colspan="2">1.1</th>
+            <!--表头标签，第一行的一个个表格,跨列，rowspan跨行-->
+            <th>1.2</th>
+        </tr>
+        <tr>
+            <td>2.1</td>
+            <!--单元格标签，表头后面的一行的一个个单元格-->
+            <td>2.2</td>
+        </tr>
+    </table>
+    <iframe src='1.html' name='chuangkou'></iframe>
+    <!--内嵌窗口标签，窗口展示哪个网页信息，名字供a标签调用，还可以设置宽高等属性-->
+    <a href="baidu.com" target="chuangkou">1.html</a></li>
+    <!--a标签配合内嵌标签，点击了就会将新的页面信息覆盖到内嵌窗口上-->
+    <form action="baidu.com" method="POST">
+        <!--表单标签,设置提交到哪个网址，提交方式，get将参数放在url，post放在请求体-->
+        <!--数据正确提交到网页需要保证不可选的表单项有name属性，单选复选下拉框要有name与value属性,用于作为k=v传输到服务器-->
+        用户名称:<input type="text" name='username' value="默认值"/><br/>
+        <!--文本框，框中显示的默认内容为value设置的值-->
+        用户密码:<input type="password" name='password' value="123"/><br/>
+        <!--密码框，框中显示的默认内容为value设置的值-->
+        性别:<input type="radio" name="sex" value="boy"/>男 <input type="radio" name="sex" checked='checked' value="girl"/>女<br/>
+        <!--单选框，type和name一致，checked为默认-->
+        兴趣爱好:<input type="checkbox" checked='checked' value="java" name='hobby'/>java <input type="checkbox" value="Python" name="hobby"/>Python<br/>
+        <!--复选框，type要一致，checked为默认值，可以多选-->
+        国籍:<select name='country'>
+                <option selected='selected' value="china">中国</option>
+                <option value="jp">小日本</option>
+            </select><br/>
+        <!--下拉列表框，option为选项，selected为默认选项-->
+        自我评价:<textarea rows="10" clos="20" name="desc">我是个傻逼</textarea><br/>
+        <!--多行文本输入框，rows为行高，clos为列宽-->
+        <input type="hidden" name="hidden" value='你好'/>
+        <!--隐藏域，提交隐藏数据-->
+        <input type="reset" value="重置"/>
+        <!--重置表单内容-->
+        <input type="submit"/>
+        <!-提交表单内容--->
+    </form>
+    <div>div标签自动换行,范围为整行</div>
+    <span>span标签不换行，内容长度为范围，可以作为div的子标签</span>
+    <p style="border: 1px solid red;">段落标签，会在上方或者下方空出一行，如果已经空了就不再空一行</p>
+    <!--css设置第一种，css样式也可以单独为标签添加，这么做不好会使代码臃肿-->
+    <div id="001">001号div标签</div>
+    <!--为这个标签设置个id，就可以单独通过css的id选择器赋予样式-->
+    <!--id是唯一的就像身份证号码，通过javascrip为id也可以设置样式-->
+    <div class="class01">002号div标签</div>
+    <!--为这个标签设置个class，就可以单独通过css的class选择器赋予样式-->
+    <!--class就像一类标识，可以重复-->
+</body>
+
+</html>

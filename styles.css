@@ -1,0 +1,56 @@
+div{
+    border: 1px solid yellow;
+}
+/*边框厚度，实线，颜色*/
+span{
+    border: 1px solid red;/*设置边框属性*/
+    color: blue;/*设置内容颜色*/
+    font-size: 20px;/*设置字体大小*/
+}
+/*css第一种格式是  标签名{属性：值} 为这类标签添加样式 */
+#001{
+    color:red;
+}
+/*css的第二种格式，在标签中添加id属性后，css格式  #id名{属性：值}*/
+.class01{
+    color: burlywood;
+}
+/*css的第三种格式，在标签中添加class属性后，css格式 .class名{属性：值}*/
+#001,.class01{
+    border: chocolate;
+}
+/*css的第4种格式，组合选择器，为一系列选择器添加样式*/
+*{
+    text-decoration: none;
+}
+/*css第五种为所有的都设置属性*/
+#head #h1{
+    text-decoration: none;
+}
+/*css的第6种后代选择器，选择head元素下的h1元素*/
+:link{
+    text-decoration: none;
+}
+/*伪类状态选择器，还有结构伪类与伪元素，css3使用了2个::,详细以后在学，表示当该类未被访问时显示css属性*/
+
+/*由于id的优先级高，一般只作为js操作dom，不用id来不添加样式*/
+/*如果使用jq，一般class也不用作样式控制，通过js制定样式*/
+#999{
+    color: red;/*字体颜色*/
+    width: 20px; /*宽度*/
+    height: 20%; /*可以用百分比，高度*/
+    background-color:#0F2D4C;/*可以16进制表示，也可以直接写red，背景颜色*/
+    font-size: 20px;/*字体大小*/
+    border: 10px solid red;/*设置边框*/
+    margin-left:auto;/*用于div标签的左对齐和右对齐*/
+    text-align: center;/*用于文本的居中*/
+    text-decoration: none;/*用于超链接去除下划线*/
+}
+table{
+    border: 1px solid blue;/*设置边框*/
+    border-collapse: collapse;/*将边框合并*/
+}
+ul{
+    list-style: none;/*去除修饰*/
+}
+/*常用的样式*/
