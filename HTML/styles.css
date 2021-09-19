@@ -7,27 +7,31 @@ span{
     color: blue;/*设置内容颜色*/
     font-size: 20px;/*设置字体大小*/
 }
-/*css第一种格式是  标签名{属性：值} 为这类标签添加样式 */
+/*css第三种格式是  标签名{属性：值} 为这类标签添加样式 */
 #001{
     color:red;
 }
-/*css的第二种格式，在标签中添加id属性后，css格式  #id名{属性：值}*/
+/*css的第四种格式，在标签中添加id属性后，css格式  #id名{属性：值}*/
 .class01{
     color: burlywood;
 }
-/*css的第三种格式，在标签中添加class属性后，css格式 .class名{属性：值}*/
+/*css的第五种格式，在标签中添加class属性后，css格式 .class名{属性：值}*/
 #001,.class01{
     border: chocolate;
 }
-/*css的第4种格式，组合选择器，为一系列选择器添加样式*/
+/*css的第六种格式，组合选择器，为一系列选择器添加样式*/
 *{
     text-decoration: none;
 }
-/*css第五种为所有的都设置属性*/
+/*css第七种为所有的都设置属性*/
 #head #h1{
     text-decoration: none;
 }
-/*css的第6种后代选择器，选择head元素下的h1元素*/
+/*css的第八种后代选择器，选择head元素下的h1元素*/
+-p{
+    text-decoration: none;
+}
+/*css的第九种选择器p标签全部使用，和不加-的效果类似*/
 :link{
     text-decoration: none;
 }
