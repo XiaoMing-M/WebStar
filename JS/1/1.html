@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script type="text/javascript">
+        //js代码区域，单行注释使用//，多行使用/**/
+        var a = null; console.log(typeof a);
+        //typeof检查null或者undefined会返回object类型，其余的为自己的对应类型。1->number
+        var b = 123; b = b.toString();//强制类型转换，只可以转为String,Number,Boolean
+        var c = 123; c = String(c);//第二种转为String类型的方式。
+        console.log(typeof b);//转为string，null和undefined使用toString会报错,其他可以转。
+        var d = "123"; d = Number(d);//将字符串转为数字类型，如果为空串或者空格，转为0
+        var e = "123d"; e = Number(e);//有非数字部分的字符串转为数字，显示NaN
+        //布尔转数字，true为1，false为0。undfined转数字，显示NaN。
+        //布尔转数字第二种，专门转字符串的，parseInt()转为整数，parseFloat()转为小数。
+        var f = 0; f = Boolean(f);//数字转boolean，除了0和NAN为false，其余为true
+        //字符串转boolean，除了空串，其余都是true。这2种null和undefined转为false。object转为true
+
+
+    </script>
+    <!--第一种js在head中加入标签，type为默认值可以不写-->
+    <!--<script src="1.js"></script>,第二种使用src引入外部js代码-->
+</head>
+<body>
+    <a href="javascript:alert('点啥');">点我吧</a>
+    <!--第三种写在属性中，只有点击了该字符才会执行js代码-->
+</body>
+</html>
